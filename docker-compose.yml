@@ -73,9 +73,9 @@ services:
   #######################################
   # Example Microservice
   #######################################
-  # app:
-  #   build: .
-  #   container_name: kong-app
-  #   networks:
-  #     - kong-net
-  #   restart: on-failure
+  app:
+    build: .
+    container_name: kong-app
+    networks:
+      - kong-net
+    restart: on-failure
